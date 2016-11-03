@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Home</title>
+
+
+    <!-- Bootstrap -->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	
+	   <link rel = "stylesheet" type="text/css" href="style.css">
+
+     <!--Adding favicon
+     <link rel="icon" href="images/favicon.ico" type="favicon/ico">
+     -->
+     
+  </head>
+
+  <body>
+
+  <div class="container-fluid">
+     <div class = "row">
+
+    <div class = "col-md-4">
+        <img src="logo.jpg" id="logo">
+
+        <h1 id = "h1"><b>IRS UWU 2017</b></h1>
+    </div>
+
+        <div class="col-md-8">
+            <div class = "col-md-2 col-md-push-1 menuItem">
+            <a href="home.html"> </a>
+                Home
+          </div>
+
+           <div class = "col-md-2 col-md-push-1 menuItem">
+            <a href="AboutUs.html">
+                Key Dates</a>
+          </div>
+
+          <div class = "col-md-2 col-md-push-1 menuItem">
+            <a href="services.html">
+                Submissions
+              </a>
+          </div>  
+
+          <div class = "col-md-2 col-md-push-1 menuItem">
+            <a href="services.html">
+                About Us
+              </a>
+          </div>  
+
+          <div class = "col-md-2 col-md-push-1 menuItem">
+            <a href="services.html">
+                Contact Us
+              </a>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <!--Slide show-->
+      <div class="col-md-12">
+        <div class="slider">
+          <img class="mySlides" src="a.jpg">
+          <img class="mySlides" src="c.jpg">
+        </div>
+      </div>
+
+      <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000); // Change image every 3 seconds
+      }
+      </script>
+    <!--Slide show closed-->
+
+    <div class="para">
+      <div class="col-md-3" id ="p1">
+         <h5 id="h5h1"><b>CALL FOR PAPERS</b></h5>
+          <p>
+          Accelerated Life Testing
+          Big Data and IoT Applications in R&M
+          Business Process Improvement
+          Design Optimization Using R&M Techniques
+          Discrete Event Modeling & Simulation
+          Economic Models for R&M Equipment
+          Diagnostics and Prognostics
+          FMEA
+          Fault Tolerance and Safety Critical Systems
+          Fault Tree Analysis
+          Human Reliability
+          Knowledge Based Training
+          Life Data Analysis
+          Maintenance Models and Methodologies
+          </p>
+      </div>
+
+      <div class="col-md-3" id="p2">
+        <h5 id="h5h2"><b>RECENT ANNOUNCEMENTS</b></h5>
+        <p>
+          he deadline for submission has been extended to 15 September, 2016 in response to numerous requests..
+        </p>
+      </div>
+      <div class="col-md-3" id="p3">
+        <h5 id="h5h3"><b>KEYNOTE SPEAKERS</b></h5>
+        <p>
+          Prof Michael Pecht is a world renowned expert in reliability and risk assessment. Prof Pecht has a BS in Physics, an MS in Electrical Engineering and an MS and PhD in Engineering Mechanics from the University of Wisconsin at Madison. He is a Professional Engineer, an IEEE Fellow, an ASME Fellow, an SAE Fellow and an IMAPS Fellow. He is the editor-in-chief of IEEE Access, and served as chief editor of the IEEE Transactions on Reliability for nine years, and chief editor for Microelectronics Reliability for sixteen years. 
+        </p>
+      </div>
+      <div class="col-md-3" id="p4">
+        <h5 id="h5h4"><b>TRAVEL FROM COLOMBO</b></h5>
+        <p>
+          The most famous attractions include Notre Dame de Paris, the Louvre, the Eiffel Tower, the Pompidou Centre, and the Arc de Triomphe...We recomend the Paris Info Web site, where you can find more useful information related to Paris.
+        </p>
+      </div>
+      </div>
+
+      <div class="col-md-12">
+        <h3 id="h3"> <b>Welcome to IRS UWU 2017</b></h3>
+          <p>Abstract submissions are open</p>
+            
+            <a href="one.html"><button id ="submitbtn">Submit an Abstract</button></a>
+      </div>
+  
+
+
+      <!--Footer-->
+      <div class="footer" id="footer1">
+        <div class="col-md-4" id="cpy"> Copyright &copy by CST_Creations</div>
+
+      </div>    
+
+      <div class="col-md-8" id="footer2">
+        <div>
+            <div class = "col-md-2">
+            <a href="home.html"> </a>
+                Home
+          </div>
+
+           <div class = "col-md-2">
+            <a href="AboutUs.html">
+                Key Dates</a>
+          </div>
+
+          <div class = "col-md-2">
+            <a href="services.html">
+                Submissions
+              </a>
+          </div>  
+
+          <div class = "col-md-2">
+            <a href="services.html">
+                About Us
+              </a>
+          </div>  
+
+          <div class = "col-md-2">
+            <a href="services.html">
+                Contact Us
+              </a>
+          </div>  
+        </div>
+        
+      </div>  
+
+  </body>
+  
+  </html>
