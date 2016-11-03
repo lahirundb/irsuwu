@@ -37,12 +37,12 @@
           </div>
 
            <div class = "col-md-2 col-md-push-1 menuItem">
-            <a href="AboutUs.html">
-                Key Dates</a>
+            <a href="keydates.html"> </a>
+                Key Dates
           </div>
 
           <div class = "col-md-2 col-md-push-1 menuItem">
-            <a href="services.html">
+            <a href="submission.html">
                 Submissions
               </a>
           </div>  
@@ -65,10 +65,12 @@
     <!--Slide show-->
       <div class="col-md-12">
         <div class="slider">
+          <img class="mySlides" src="blue.jpg">
+          <img class="mySlides" src="purple.jpg">
           <img class="mySlides" src="a.jpg">
           <img class="mySlides" src="c.jpg">
         </div>
-      </div>
+      
 
       <script>
       var myIndex = 0;
@@ -86,6 +88,7 @@
           setTimeout(carousel, 3000); // Change image every 3 seconds
       }
       </script>
+      </div>
     <!--Slide show closed-->
 
     <div class="para">
@@ -129,14 +132,35 @@
       </div>
       </div>
 
-      <div class="col-md-12">
+      <br>
+
+      <div class="col-md-9">
         <h3 id="h3"> <b>Welcome to IRS UWU 2017</b></h3>
           <p>Abstract submissions are open</p>
             
             <a href="one.html"><button id ="submitbtn">Submit an Abstract</button></a>
       </div>
-  
 
+        <!--google map-->
+        <div class = "col-md-3">
+
+          <div id="map" style="width:300px;height:300px;background:yellow"></div>
+
+            <script>
+              function myMap() {
+                  var mapOptions = {
+                      center: new google.maps.LatLng(6.9826, 81.0768),
+                      zoom: 15,
+                      mapTypeId: google.maps.MapTypeId.HYBRID
+                  }
+              var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+              }
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+            
+        </div>
+   
 
       <!--Footer-->
       <div class="footer" id="footer1">
@@ -152,12 +176,12 @@
           </div>
 
            <div class = "col-md-2">
-            <a href="AboutUs.html">
+            <a href="keydates.html">
                 Key Dates</a>
           </div>
 
           <div class = "col-md-2">
-            <a href="services.html">
+            <a href="submission.html">
                 Submissions
               </a>
           </div>  
